@@ -7,7 +7,7 @@ class Library {
 	String student
 	String librarian
 
-	String toString{
+	String toString(){
 		"$location, $openingHours, $book, $student, $librarian"	
 	}
 
