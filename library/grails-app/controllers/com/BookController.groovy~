@@ -1,0 +1,6 @@
+package com
+
+class BookController {
+
+    def index() { }
+}
