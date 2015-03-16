@@ -6,7 +6,6 @@ class Book {
 	String isbn
 	String dateBorrowed
 	String returnDate
-	String student
 	
 	String toString(){
 		"$title, $author, $isbn, $dateBorrowed, $returnDate, $student"
@@ -18,6 +17,6 @@ class Book {
 	isbn()
 	dateBorrowed()
 	returnDate()
-	student()
+
     }
 }
