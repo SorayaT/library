@@ -12,5 +12,10 @@ class Course {
 	}
 
     static constraints = {
+	title()
+	code()
+	tutor()
+	department()
+	description()
     }
 }

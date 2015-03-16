@@ -11,5 +11,9 @@ class Student {
 	}
 
     static constraints = {
+	name()
+	email()
+	studentId()
+	course()
     }
 }

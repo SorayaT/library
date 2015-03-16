@@ -13,5 +13,11 @@ class Book {
 	}
 
     static constraints = {
+	title()
+	author()
+	isbn()
+	dateBorrowed()
+	returnDate()
+	student()
     }
 }

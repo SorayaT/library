@@ -12,5 +12,10 @@ class Librarian {
 	}
 
     static constraints = {
+	name()
+	email()
+	userName()
+	password()
+	telephone()
     }
 }
