@@ -8,7 +8,7 @@ class Book {
 	String returnDate
 	
 	String toString(){
-		"$title, $author, $isbn, $dateBorrowed, $returnDate, $student"
+		"$title, $author, $isbn, $dateBorrowed, $returnDate"
 	}
 
     static constraints = {
