@@ -17,12 +17,16 @@ class BookController {
     }
 
     def show(Book bookInstance) {
-        if(params.id && Book.exists(params.id)){
-		render Book.findId(params.title) as XML
+	respond bookInstance
+        
+    }
+	def listDetails(Book bookInstance) {
+	if(params.title && Book.exists(params.title)){
+		render Book.findByTitle(params.title) as XML
 	}else{
 		render Book.list() as XML
 	}
-    }
+}
 
     def create() {
         respond new Book(params)

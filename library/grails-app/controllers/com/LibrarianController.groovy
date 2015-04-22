@@ -108,7 +108,7 @@ class LibrarianController {
 			if(params.cName)
 				redirect controller:params.cName, action:params.aName
 			else
-				redirect controller:'course',action:'index'
+				redirect(action:'index')
 			}else{
 				flash.message= "Invalid username and password."
 				render view:'login'

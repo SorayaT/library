@@ -17,13 +17,16 @@ class StudentController {
     }
 
     def show(Student studentInstance) {
-        if(params.id && Student.exist(params.id)){
-	render Student.findByname(params.name) as XML
-}
-else{
-render Student.list() as XML
-}
+	respond studentInstance
+        
     }
+	def listDetails(Student studentInstance) {
+	if(params.studentId && Student.exists(params.studentId)){
+		render Student.findBystudentId(params.studentId) as JSON
+	}else{
+		render Student.list() as JSON
+	}
+}
 
     def create() {
         respond new Student(params)
